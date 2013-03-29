@@ -124,7 +124,7 @@ if (Meteor.isClient) {
             Session.set('showallgrid',true);
             Meteor.call("clearframe2");
             if (handle) {
-                console.log(handle);
+                //console.log(handle);
                 Meteor.clearInterval(handle);
             }
             var frames = Frame.find({},{$sort:{time:-1}}).fetch()
@@ -136,7 +136,7 @@ if (Meteor.isClient) {
                         i = 0; 
                     }                  
                     
-                    console.log(frames[i].index+" "+i+" "+frames.length);
+                    //console.log(frames[i].index+" "+i+" "+frames.length);
                     Frame2.insert(frames[i]);
                     i++;
                 }
