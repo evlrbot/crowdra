@@ -122,6 +122,9 @@ if (Meteor.isClient) {
         'click #save' : function(e) {
             Meteor.call("save");
         },
+        'click #reset' : function(e) {
+            alert('hello from reset');
+        },
         'click #stop' : function(e) {
             Session.set('showallgrid',false);
         },
